@@ -1,0 +1,550 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+
+/* Barra de navegacion */
+header {
+    padding: 0 0 !important;
+    margin: 0 0 !important;
+    min-width: 100% !important;
+}
+
+.navbar {
+    padding: 32px;
+    background-color: #D49DAB;
+    box-shadow: 0px 5px 10px #a3a3a3;
+    text-align: center;
+}
+
+.nav-link {
+    color: white !important;
+}
+
+.navbar-nav a {
+    font-weight: bold;
+}
+
+.navbar-collapse {
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+}
+
+/* Estilos generales */
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.seccion-titulo {
+    font-size: 32px;
+    font-weight: bold;
+    padding: 40px;
+}
+
+.seccion-texto {
+    font-size: 18px;
+}
+
+.seccion-rosa {
+    background-color: #e7afbe;
+    height: auto;
+}
+
+.seccion-clara {
+    background-color: rgb(237, 237, 237);
+}
+
+.seccion-rosita{
+    background-color: #F5B5C6;
+}
+
+.seccion-descripcion {
+    font-size: 20px;
+    color: #584e4e;
+}
+
+.btn-p {
+    font-size: 18px;
+    margin: 20px;
+    padding: 10px;
+    background-color:#e9ba8d;
+    border: 0;
+    border-radius: 10px;
+    color: white;
+}
+
+.texto-negro {
+    color: black;
+}
+
+.texto-marron {
+    color: rgb(54, 48, 26);
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.contacto-div {
+    background-color: #75575F;
+    border-radius: 15px;
+}
+
+.animado {
+    opacity: 0;
+    transition: all 1s;
+}
+
+.mostrarArriba {
+    animation: mostrarArriba 1s;
+}
+
+@keyframes mostrarArriba {
+    0% {
+        transform: translateY(80px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Seccion Hero */
+.hero-principal h1 {
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+
+.hero {
+    background: #f7eff1;
+    max-width: 100%;
+    height: auto;
+    text-align: center;
+    background-image: url(imagenes/imagen-de-613px.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.hero-principal {
+    padding: 48px;
+}
+
+.hero-imagen-desarrollador {
+    width: 200px;
+    height: 200px;
+    border: 5px solid white;
+    border-radius: 50%;
+    margin: 5%;
+}
+
+.hero-principal h2 {
+    font-size: 24px;
+    color: #ffffff
+}
+
+/* Sobre mi */
+.sobre-mi {
+    height: auto;
+    padding: 70px;
+}
+
+.sobre-mi .contenedor {
+    max-width: 700px;
+    text-align: center;
+}
+
+/* Experiencia */
+.experiencia {
+    padding: 50px 60px;
+    position: relative;
+    display: block;
+}
+
+.experiencia i {
+    font-size: 40px;
+    padding: 8px 19px;
+    color: rgb(255, 255, 255);
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+.experiencia .columna {
+    padding: 30px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+}
+
+.desarrollo-titulo {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.diseños-titulo {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.servicio-titulo {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+/* Proyectos */
+.proyectos-recientes {
+    padding: 40px;
+}
+
+.proyectos-recientes h2,
+h3 {
+    align-items: center;
+    text-align: center;
+}
+
+.proyectos-recientes img {
+    height: 100%;
+    width: 100%;
+    display: block;
+    transition: all 0.2s ease;
+}
+
+.proyectos-recientes .container-fluid {
+    padding-top: 55px;
+}
+
+.imagenes-proyecto {
+    padding: 0 !important;
+}
+
+#proyectos {
+    padding: 40px 0px;
+}
+
+.proyectos-contenedor {
+    padding-top: 60px;
+    margin-bottom: 40px;
+    position: static;
+    z-index: 10;
+}
+
+.proyecto-texto {
+    padding: 30px;
+}
+
+.overlay {
+    transition: all 0.2s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.overlay p {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.proyecto {
+    position: relative;
+}
+
+.proyecto:hover img {
+    opacity: 0.2;
+}
+
+.proyecto:hover .overlay {
+    opacity: 1;
+}
+
+.overlay .iconos-contenedor {
+    display: flex;
+}
+
+.overlay i {
+    color: black;
+    font-size: 50px;
+    margin: 10px;
+}
+
+/* Testimonios */
+.testimonios {
+    padding: 80px 40px;
+    background-color: white;
+}
+
+#testimonios-carrusel {
+    position: relative;
+    z-index: 15;
+}
+
+.testimonios .carousel {
+    max-width: 900px;
+    padding: -50px;
+}
+
+.carousel {
+    padding-bottom: 100px;
+}
+
+.carousel-item {
+    height: auto;
+    width: 100%;
+}
+
+.carousel-item .container {
+    width: 100%;
+    height: 100%;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.testimonio-imagen {
+    height: 120px;
+    width: 120px;
+    margin: 10px 10px 20px 10px;
+}
+
+.testimonio-texto {
+    max-width: 70%;
+    font-size: 20px;
+    text-align: center;
+}
+
+.testimonio-info {
+    font-weight: bold;
+    text-align: center;
+}
+
+.testimonio-info p {
+    margin-bottom: 0;
+}
+
+.testimonio-footer .cliente {
+    font-size: 20px;
+}
+
+.testimonio-info .cargo {
+    font-size: 15px;
+    color: #656060;
+}
+
+.carousel-control-next {
+    position: absolute;
+    right: 0px !important;
+}
+
+/* Contacto */
+.contacto {
+    padding: 60px;
+}
+
+.contacto .container {
+    position: static;
+    z-index: 15;
+}
+
+.contacto h2 {
+    color: white;
+    font-weight: bold;
+    padding: 20px;
+}
+
+.contacto button {
+    color: rgb(245, 245, 245);
+    font-weight: bold;
+    background-color: transparent;
+    border: 2px solid rgb(245, 245, 245);
+    padding: 20px 32px;
+    margin: 15px 0px;
+    border-radius: 30px;
+    transition: all 0.2s ease-in-out;
+}
+
+.contacto button:hover {
+    background-color: rgb(245, 245, 245);
+    ;
+    font-size: 20px;
+    transition: all 0.2s ease-in-out;
+    color: #656060;
+}
+
+#name:focus {
+    outline: solid 3px rgb(54, 48, 26);
+    transition: all 0.1s ease-in-out;
+}
+
+#email:focus {
+    outline: solid 3px rgb(54, 48, 26);
+    transition: all 0.1s ease-in-out;
+}
+
+#comment:focus {
+    outline: solid 3px rgb(54, 48, 26);
+    transition: all 0.1s ease-in-out;
+}
+
+#mail-mio {
+    opacity: 0;
+}
+
+.form {
+    margin: auto;
+    padding: 40px;
+    width: 900px;
+    box-sizing: border-box;
+    margin-top: 20px;
+}
+
+.form label {
+    margin-block-end: .5em;
+    padding-inline-start: .5em;
+}
+
+.form input,
+textarea {
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 1rem;
+    padding: 7px;
+    border-radius: .5em;
+    margin-bottom: 15px;
+}
+
+.form textarea {
+    min-height: 100px;
+    max-height: 300px;
+}    
+
+#comment {
+    height: 300px;
+}
+
+
+input::-webkit-input-placeholder {
+    color: #0F0A0A88;
+}
+
+#mail-mio {
+    opacity: 0;
+}
+
+/* Pie de Pagina (footer) */
+footer {
+    background-color: #36282B;
+    min-height: 150px;
+}
+
+.seguime {
+    color: white;
+    padding: 10px 10px 5px 10px;
+    margin: 20px 20px 10px 20px;
+    text-align: center;
+}
+
+.iconos-redes-sociales a {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    margin: 5px;
+    border: 2px solid white;
+    border-radius: 50%;
+    transition: all 0.2s ease-in;
+}
+
+.iconos-redes-sociales i {
+    color: white;
+    font-size: 24px;
+    transition: all 0.2s ease-in;
+}
+
+.iconos-redes-sociales a:hover {
+    background-color: white;
+}
+
+.iconos-redes-sociales a:hover i {
+    color: #dbbfa7;
+}
+
+.derechos-de-autor {
+    font-size: 15px;
+    color: rgb(241, 241, 241);
+    padding: 35px;
+}
+
+/* Adaptable (Responsivo) */
+@media screen and (max-width: 800px) {
+    .testimonio-imagen {
+        height: 120px;
+        width: 120px;
+    }
+
+    .testimonio-texto {
+        font-size: 18px
+    }
+}
+
+@media screen and (min-width: 713px) {
+    .hero {
+        background-image: url(imagenes/Leona-Jennings-de-espalda.jpg);
+        height: 700px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .overlay p {
+        font-size: 18px;
+    }
+
+    .overlay i {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 991px) {
+    .form {
+    width: 100%;
+}
+}
+
+@media screen and (max-width: 360px) {
+    .iconos-redes-sociales a {
+        width: 30px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 2px;
+        margin: 5px;
+        border: 2px solid white;
+        border-radius: 50%;
+    }
+
+    .iconos-redes-sociales i {
+        color: white;
+        font-size: 14px;
+    }
+}
